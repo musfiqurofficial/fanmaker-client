@@ -49,7 +49,7 @@ function Form() {
       })
       .catch((error) => {
         console.error(error);
-        toast.error("Successfully Submitted!");
+        toast.error("something is wrong!");
       });
   }
 

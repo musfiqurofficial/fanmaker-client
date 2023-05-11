@@ -1,6 +1,7 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { GrClose } from "react-icons/gr";
+import Form from "../pages/Home/Form";
 
 export default function ModalUI({ closeModal, isOpen }) {
   return (
@@ -20,7 +21,7 @@ export default function ModalUI({ closeModal, isOpen }) {
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex  min-h-full items-center justify-center p-4 text-center">
+            <div className="flex  min-h-full items-start justify-center p-4 text-center">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -36,14 +37,14 @@ export default function ModalUI({ closeModal, isOpen }) {
                   </button>
 
                   <div className="">
-                    <div>
+                    <center>
                       <Dialog.Title
                         as="h3"
-                        className="text-xl text-center font-medium text-red-600 dark:text-gray-200 border-2 rounded-md border-red-600 py-3"
+                        className="w-full mx-auto"
                       >
-                        Unable to find survey
+                        <Form />
                       </Dialog.Title>
-                    </div>
+                    </center>
                   </div>
                 </Dialog.Panel>
               </Transition.Child>

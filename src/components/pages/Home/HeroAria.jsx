@@ -1,9 +1,9 @@
-import Logo from "../../../assets/logo.webp";
+import Logo from "../../../assets/Starlogo.png";
 import Form from "./Form";
 
 const HeroAria = () => {
   return (
-    <div className="bg-[#ffffff93]">
+    <div className="lg:bg-[#ffffff93] bg-[#ffffff7c]">
       <div className="mx-4 md:mx-24 lg:mx-0 xl:mx-0 2xl:mx-0">
         <div className="pb-10 sm:px-14 mx-auto max-w-full md:max-w-full lg:max-w-screen-lg xl:max-w-screen-lg 2xl:max-w-screen-xl">
           <center>
